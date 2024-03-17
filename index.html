@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life Expectancy Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="number"],
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .form-group textarea {
+    height: 100px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2><center>Life Expectancy Prediction System</h2></center>
+
+  <form action="/predict" method="post">
+    <div class="form-group">
+      <label for="country">Country</label>
+      <input type="text" id="country" name="country">
+    </div>
+    <div class="form-group">
+        <label for="year">Year</label>
+        <input type="text" id="year" name="year">
+      </div>
+      <div class="form-group">
+        <label for="status">Status</label>
+        <input type="text" id="status" name="status">
+      </div>
+      <div class="form-group">
+        <label for="adultmortality">Adult Mortality</label>
+        <input type="text" id="adultmortality" name="adultmortality">
+      </div>
+      <!-- <div class="form-group">
+        <label for="infantdeaths">Infant deaths</label>
+        <input type="text" id="infantdeaths" name="infantdeaths">
+      </div> -->
+      <div class="form-group">
+        <label for="alcohol">Alcohol</label>
+        <input type="text" id="alcohol" name="alcohol">
+      </div>
+      <!-- <div class="form-group">
+        <label for="percentageexpenditure">Percentage expenditure</label>
+        <input type="text" id="percentageexpenditure" name="percentageexpenditure">
+      </div>
+      <div class="form-group">
+        <label for="hepatitisB">Hepatitis B</label>
+        <input type="text" id="hepatitisB" name="hepatitisB">
+      </div>
+      <div class="form-group">
+        <label for="measles">Measles</label>
+        <input type="text" id="measles" name="measles">
+      </div> -->
+      <div class="form-group">
+        <label for="bmi"> BMI </label>
+        <input type="text" id="bmi" name="bmi">
+      </div>
+      <!-- <div class="form-group">
+        <label for="underfivedeaths"> Under-five deaths </label>
+        <input type="text" id="underfivedeaths" name="underfivedeaths">
+      </div> -->
+      <div class="form-group">
+        <label for="polio">Polio</label>
+        <input type="text" id="polio" name="polio">
+      </div>
+      <!-- <div class="form-group">
+        <label for="totalexpenditure">Total expenditure</label>
+        <input type="text" id="totalexpenditure" name="totalexpenditure">
+      </div> -->
+      <div class="form-group">
+        <label for="diphtheria">Diphtheria</label>
+        <input type="text" id="diphtheria" name="diphtheria">
+      </div>
+      <div class="form-group">
+        <label for="hivaids"> HIV/AIDS</label>
+        <input type="text" id="hivaids" name="hivaids">
+      </div>
+      <div class="form-group">
+        <label for="gdp">GDP</label>
+        <input type="text" id="gdp" name="gdp">
+      </div>
+      <!-- <div class="form-group">
+        <label for="population">Population</label>
+        <input type="text" id="population" name="population">
+      </div>
+      <div class="form-group">
+        <label for="thinness1to19years">Thinness  1-19 years</label>
+        <input type="text" id="thinness1to19years" name="thinness1to19years">
+      </div>
+      <div class="form-group">
+        <label for="thinness5to9years">Thinness 5-9 years</label>
+        <input type="text" id="thinness5to9years" name="thinness5to9years">
+      </div>
+      <div class="form-group">
+        <label for="incomecompositionofresources">Income composition of resources</label>
+        <input type="text" id="incomecompositionofresources" name="incomecompositionofresources">
+      </div>
+      <div class="form-group">
+        <label for="schooling">Schooling</label>
+        <input type="text" id="schooling" name="schooling">
+      </div> -->
+    <button type="submit" class="btn">Predict</button>
+  </form>
+  <center><div class="result">
+    {% if lifeExpectancy %}
+    <h5>Predicted Life Expectancy Value:</h5>
+    <p>{{lifeExpectancy}}</p>
+    {% endif %}
+</div></center>
+</div>
+
+</body>
+</html>
