@@ -32,30 +32,30 @@ Joblib
 
 # Input Features
 
-Country: Select the country for which you want to predict life expectancy.
-Year: Enter the year for which you want to make the prediction.
-Status: Select the status of the country (developed or developing).
-Adult Mortality: Enter the adult mortality rate.
-Alcohol: Enter the alcohol consumption rate.
-BMI: Enter the Body Mass Index (BMI).
-Polio: Enter the polio immunization coverage rate.
-Diphtheria: Enter the diphtheria immunization coverage rate.
-HIV/AIDS: Enter the estimated HIV/AIDS prevalence rate.
-GDP: Enter the Gross Domestic Product (GDP) per capita.
+1. Country: Select the country for which you want to predict life expectancy.
+2. Year: Enter the year for which you want to make the prediction.
+3. Status: Select the status of the country (developed or developing).
+4. Adult Mortality: Enter the adult mortality rate.
+5. Alcohol: Enter the alcohol consumption rate.
+6. BMI: Enter the Body Mass Index (BMI).
+7. Polio: Enter the polio immunization coverage rate.
+8. Diphtheria: Enter the diphtheria immunization coverage rate.
+9. HIV/AIDS: Enter the estimated HIV/AIDS prevalence rate.
+10. GDP: Enter the Gross Domestic Product (GDP) per capita.
 
 # Example
 
  For example, you can input the following values:
 
-Country: Afghanistan
-Year: 2015
-Status: Developing
-Adult Mortality: 263.0
-Alcohol: 0.01
-BMI: 19.1
-Polio: 6.0
-Diphtheria: 65.0
-HIV/AIDS: 0.1
-GDP: 584.259210
+1. Country: Afghanistan
+2. Year: 2015
+3. Status: Developing
+4. Adult Mortality: 263.0
+5. Alcohol: 0.01
+6. BMI: 19.1
+7. Polio: 6.0
+8. Diphtheria: 65.0
+9. HIV/AIDS: 0.1
+10. GDP: 584.259210
 
 After clicking the "Predict" button, you should see the predicted life expectancy for the given input.
